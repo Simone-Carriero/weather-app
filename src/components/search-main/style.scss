@@ -1,0 +1,21 @@
+.search-main {
+    display: flex;
+    gap: .5rem;
+
+    &__input-wrapper {
+
+        input {
+            padding: .3rem 0;
+            outline-color: #1b62d9;
+        }
+    }
+
+    &__button {
+        font-weight: 500;
+        color: #ffffff;
+        background-color: #018da0;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+}
