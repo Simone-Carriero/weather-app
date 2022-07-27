@@ -1,0 +1,128 @@
+.widget {
+  width: 30rem;
+  margin-top: 2rem;
+  text-align: center;
+
+  .weather-icon {
+    padding: 1rem;
+    color: #000000;
+    background-color: var(--color-light);
+    font-size: 7rem;
+    border-radius: 20px 20px 0 0;
+
+    @media only screen and (min-width: 600px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10rem;
+      height: 20rem;
+    }
+  }
+
+
+  
+    @media only screen and (min-width: 600px) {
+      width: 60rem;
+    }
+
+    @media only screen and (min-width: 900px) {
+        width: 70rem;
+    }
+}
+
+
+
+
+.temperature {
+
+  .description {
+    padding: 1rem;
+    background-color: #0a0606;
+
+    .degree {
+      font-size: 5rem;
+
+      @media only screen and (min-width: 600px) {
+          font-size: 7rem;
+        }
+    }
+
+    .place {
+      font-size: 1.8rem;
+      .weather-condition {
+        text-transform: uppercase;
+        display: block;
+
+        @media only screen and (min-width: 600px) {
+          font-size: 4rem;
+        }
+      }
+
+      @media only screen and (min-width: 600px) {
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 600px) {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      padding: 2rem 1rem;
+      height: 18rem;
+    }
+
+  }
+
+  .date {
+    padding: 2rem;
+    font-size: 2.5rem;
+    background-color: #70c4b6;
+
+    @media only screen and (min-width: 600px) {
+      display: grid;
+      place-items: center;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+
+
+  @media only screen and (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+
+
+.extra-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  padding: 1rem;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+
+  i {
+    color: #70c4b6;
+
+    @media only screen and (min-width: 600px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    padding: 2rem;
+    font-size: 2rem;
+  }
+}
+
+
+
+

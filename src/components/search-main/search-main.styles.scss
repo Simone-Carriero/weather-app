@@ -1,0 +1,42 @@
+.search-main {
+    display: flex;
+    justify-content: center;
+    gap: .3rem;
+
+    &__input-wrapper {
+        
+        input {
+            padding: .5rem;
+            border: 0;
+            border-radius: 5px 0 0 5px;
+            outline-color: #1b62d9;
+            
+
+            @media only screen and (min-width: 600px) {
+                padding: 1rem;
+            }
+
+            @media only screen and (min-width: 900px) {
+                width: 40rem;
+            }
+        }
+    }
+    
+    &__button {
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #018da0;
+        outline: none;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        
+        @media only screen and (min-width: 600px) {
+            font-size: 1.4rem;
+            padding: 1rem 2rem;
+        }
+
+    }
+}

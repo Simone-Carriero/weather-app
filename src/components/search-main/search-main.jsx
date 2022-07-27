@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import './style.scss'
+import './search-main.styles.scss'
 
 const SearchMain = ({fetchData}) => {
     const [searchTerm, setSearchTerm] = useState('')
@@ -8,6 +8,12 @@ const SearchMain = ({fetchData}) => {
     const handleChange = ({ target }) => setSearchTerm(target.value)
 
     const handleClick = () => fetchData(searchTerm)
+
+    const handleKeyUp = (e) => {
+        if (e.key === 'Enter') {
+            fetchData(searchTerm)
+        }
+    }
     
 
     return (
@@ -17,6 +23,7 @@ const SearchMain = ({fetchData}) => {
                     type="search" placeholder='Search city...' id='search'
                     value={searchTerm}
                     onChange={handleChange}
+                    onKeyUp={handleKeyUp}
                 />
             </div>
             <button
